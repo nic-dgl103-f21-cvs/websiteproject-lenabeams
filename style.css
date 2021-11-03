@@ -1,0 +1,27 @@
+
+li {
+  display: inline;
+  font-size: larger;
+  
+}
+a {  text-decoration: none;
+     color: white;
+     }
+.menu  {
+    float:inline;
+    list-style-type:none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #335D67;
+   
+}
+#textlogo {
+    align-items: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
