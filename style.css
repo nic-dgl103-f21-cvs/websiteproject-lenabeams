@@ -23,7 +23,7 @@ width: 900px;
 margin:auto; /* not centering*/
 }
 
-button {
+.button {
 color: white;
 background: #335d67;
   padding: 15px 300px;
@@ -34,6 +34,7 @@ background: #335d67;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  font-size: 16pt;
 }
  
 
@@ -49,6 +50,7 @@ background: #335d67;
   align-items: center;
 }
 
+/*services page*/
 
 .card {
   width: 200px;
@@ -78,7 +80,11 @@ background: #335d67;
   align-content: space-around;
 
 }
+.emailform {
+  margin:auto;
+  padding: 2em;
 
+}
 .alignment {
   Margin: auto; 
   padding-left: 40px;
