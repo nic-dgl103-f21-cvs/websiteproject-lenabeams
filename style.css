@@ -1,3 +1,20 @@
+.logoname {
+  font-family: 'Lobster';
+  color: #ad522e;
+  float: right; 
+  font-size: 4.5em;
+  padding-right: 2em;
+  
+}
+
+.logopic {
+  width: 8em;
+  padding-left:10em;
+  padding-top: 1em;
+}
+
+
+
 li {
   display: inline;
 
@@ -5,11 +22,12 @@ li {
 a {
   text-decoration: none;
   color: white;
+  text-align: center;
   
 }
 
 nav a:hover {
-  color:palevioletred;
+  color:hsla(17, 58%, 43%, 0.9)
 }
 /*home page css*/ 
 .introhome {
@@ -20,7 +38,18 @@ nav a:hover {
 
 .homepic {
 width: 900px;
-margin:auto; /* not centering*/
+
+}
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+  background-color: #335d67;
+  font-size: 30px;
+  padding: 0.13em;
+ 
+  
+
 }
 
 .button {
@@ -38,52 +67,92 @@ background: #335d67;
 }
  
 
-.menu {
-  list-style-type: none;
-  text-align: center;
-  background-color: #335d67;
-  padding: 0.125em;
-  font-size: 30px;
 
-}
-#textlogo {
-  align-items: center;
-}
+
 
 /*services page*/
 
 .card {
-  width: 200px;
+  width: 300px;
   border: solid 2px; 
   padding: 3px;
-  
- 
-  
+  justify-content: space-between;
+  margin: 10px;
+  background-color: hsla(17, 58%, 43%, 0.9);
 }
-
+.card-dog-item1 {
+  justify-content: space-between;
+ 
+}
 
 
 .serviceimg {
-  width: 200px;
+  width: 300px;
   
   
 
 }
 
 
-.services {
-  display: flex;
+.flex-items {
+   margin:0;
+  display:flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: initial;
-  align-items: center;
-  align-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 10em;
+  padding-left: 13em;
+  align-items: stretch;
+  
+  
+}
+
+.emailform {
+  margin:0px;
+  padding: 0;
+  
+}
+
+.flex-pricing {
+  display: flex;
+  padding-left: 12em;
 
 }
-.emailform {
-  margin:auto;
-  padding: 2em;
+.flex-form {
+  display:flex;
+  margin: auto;
+ padding-right: 6em;
+ flex-direction: column;
+ 
+}
+.flexform .pet-name {
+display:flex; 
+margin:auto;
 
+
+}
+.flexform .pet-type {
+  display:flex; 
+  margin:auto;
+  
+  
+  
+}
+.flex-container{
+  display: flex;
+  margin: auto;
+ 
+  
+
+}
+.text1 {
+  margin-top: 60px;
+}
+
+.moreinfo {
+  background-color: #335d67; opacity:0.6;
+  color: white;
+  padding: 5em;
+  margin:0;
 }
 .alignment {
   Margin: auto; 
@@ -97,4 +166,19 @@ footer
   background-color: #335d67;
   padding: 0.125em;
   font-size: 20px;
+  position: relative;
+  z-index: -1;
+  padding: 1em;
+  align-content: center;
+  
+}
+.map {
+  float:right;
+  position: absolute;
+  top: 0;
+  right:0;
+  padding: 1em;
+  
+ 
+
 }
