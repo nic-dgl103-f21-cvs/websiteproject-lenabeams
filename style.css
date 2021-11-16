@@ -53,8 +53,8 @@ width: 900px;
 }
 
 .button {
-color: white;
-background: #335d67;
+  color: white;
+  background-color: #335d67;
   padding: 15px 300px;
   border-radius: 50px;
   text-align: center;
@@ -151,8 +151,15 @@ margin:auto;
 .moreinfo {
   background-color: #335d67; opacity:0.6;
   color: white;
-  padding: 5em;
-  margin:0;
+  margin:auto;
+  padding:2em;
+ 
+
+}
+.moreinfo p {
+ 
+  
+
 }
 .alignment {
   Margin: auto; 
