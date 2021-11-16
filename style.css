@@ -19,7 +19,7 @@ li {
   display: inline;
 
 }
-a {
+nav a {
   text-decoration: none;
   color: white;
   text-align: center;
@@ -27,13 +27,14 @@ a {
 }
 
 nav a:hover {
-  color:hsla(17, 58%, 43%, 0.9)
+  color:#a9cdd6;
 }
 /*home page css*/ 
 .introhome {
   margin: auto;
   text-align: center;
   padding-top: 20px;
+  font-family: 'Lobster';
 }
 
 .homepic {
@@ -72,6 +73,11 @@ width: 900px;
 
 /*services page*/
 
+main {
+  padding-top: 2em;
+  background-color: #a9cdd6;
+
+}
 .card {
   width: 300px;
   border: solid 2px; 
@@ -102,6 +108,7 @@ width: 900px;
   padding-right: 10em;
   padding-left: 13em;
   align-items: stretch;
+  
   
   
 }
@@ -149,23 +156,36 @@ margin:auto;
 }
 
 .moreinfo {
-  background-color: #335d67; opacity:0.6;
+ background-color: hsla(17, 58%, 43%, 0.9);
   color: white;
   margin:auto;
-  padding:2em;
- 
+  padding:5em;
+  padding-left: 14em;
+  padding-right:14em;
 
 }
+.moreinfo h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
 .moreinfo p {
+  padding: 2em;
+  font-size: 1em;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color:#223d44;
+}
  
   
 
-}
-.alignment {
-  Margin: auto; 
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: center;
+
+
+
+.article-links {
+  color:#335d67;
 }
 
 footer 
