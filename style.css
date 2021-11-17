@@ -14,7 +14,9 @@
 }
 
 
-
+body {
+  font-family:'Open Sans', sans-serif;
+}
 li {
   display: inline;
 
@@ -178,14 +180,40 @@ h1 {
   text-align: center;
   color:#223d44;
 }
+
+/* about page */
+.faq-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.faqs {
+  padding-left: 10em;
+  padding-right:10em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
  
   
 
-
+/*caring for your pet page*/
+.video {
+  padding-left: 15em;
+  padding-right:10em;
+}
+.helpful-articles {
+  text-align: center;
+  font-size: 1.5em;
+}
 
 
 .article-links {
   color:#335d67;
+  padding-left:10em;
+  padding-right:10em;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 3em;
 }
 
 footer 
