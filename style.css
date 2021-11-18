@@ -2,8 +2,8 @@
   font-family: 'Lobster';
   color: #ad522e;
   float: right; 
-  font-size: 4.5em;
-  padding-right: 2em;
+  font-size: 5.4em;
+  padding-right: 1em;
   
 }
 
@@ -16,6 +16,18 @@
 
 body {
   font-family:'Open Sans', sans-serif;
+}
+.call-btn {
+  background-color: #ad522e;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:1em;
+  position: fixed;
+  right: 0em;
+  top:10em;
+  writing-mode: vertical-rl;
+  border-radius: 0.5em 0 0 0.5em;
 }
 li {
   display: inline;
@@ -32,27 +44,45 @@ nav a:hover {
   color:#a9cdd6;
 }
 /*home page css*/ 
+
+
+  
 .introhome {
   margin: auto;
   text-align: center;
   padding-top: 20px;
   font-family: 'Lobster';
+  font-size: 3em;
+  padding-bottom: 1.5em;
 }
 
 .homepic {
-width: 900px;
+  background-image: url(petimages/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
+background-attachment: fixed;
+padding-top:8em;
+padding-bottom: 8em;
+background-repeat: no-repeat;
 
+}
+.homepic h2 {
+ color:white;
+ padding:3em;
+ font-family: 'Open Sans', sans-serif;
 }
 
 .menu {
   list-style-type: none;
   text-align: center;
   background-color: #335d67;
-  font-size: 30px;
+  font-size: 2em;
+  font-weight: bold;
   padding: 0.13em;
  
   
 
+}
+.alignment {
+  text-align: center;
 }
 
 .button {
@@ -66,7 +96,17 @@ width: 900px;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  font-size: 16pt;
+  font-size: 2em;
+}
+.words-heading {
+  font-weight:bold;
+  padding-top:3em;
+  font-size: 2em;;
+}
+.testemonials {
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1.5em;
 }
  
 
@@ -74,7 +114,12 @@ width: 900px;
 
 
 /*services page*/
+.services-header {
+   padding:1em;
+  font-family: 'Lobster';
+  font-size: 2em;
 
+}
 main {
   padding-top: 2em;
   background-color: #a9cdd6;
@@ -100,6 +145,118 @@ main {
   
 
 }
+.h3text {
+  font-style: bold;
+  font-size: 2em;
+}
+ .medtext {
+  padding-top: 2em;
+}
+
+
+
+
+/* ===============
+   FORM CSS
+   ----------
+
+   BUTTONS
+   =============== */
+
+input[type="reset"] {
+  color: #335d67;
+  padding: 12px 20px;
+  border: 1px solid #335d67;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #d1efe3;
+}
+
+input[type="submit"] {
+  background-color: #335d67;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #335d67;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #335d67;
+}
+
+/* ===============
+   STRUCTURE
+   =============== */
+
+.wrapper-form {
+  border-radius: 5px;
+  background-color:  #d2b48c;
+  padding: 20px;
+  padding-right: 3em;;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  
+}
+
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* ===============
+   FORM CONTROLS
+   =============== */
+
+input,
+select,
+textarea {
+  font-size: 1em;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  font-family: sans-serif;
+  
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.label-required {
+  font-size: 1rem;
+  color: red;
+}
+
 
 
 .flex-items {
@@ -115,37 +272,24 @@ main {
   
 }
 
-.emailform {
-  margin:0px;
-  padding: 0;
-  
+.label {
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .flex-pricing {
   display: flex;
+  margin-top:8em;
   padding-left: 12em;
+  padding-right:8em;
 
 }
-.flex-form {
-  display:flex;
-  margin: auto;
- padding-right: 6em;
- flex-direction: column;
- 
+.flex-pricing dd {
+  text-align: center;
+  margin: 0;
 }
-.flexform .pet-name {
-display:flex; 
-margin:auto;
 
 
-}
-.flexform .pet-type {
-  display:flex; 
-  margin:auto;
-  
-  
-  
-}
 .flex-container{
   display: flex;
   margin: auto;
@@ -153,17 +297,20 @@ margin:auto;
   
 
 }
-.text1 {
-  margin-top: 60px;
-}
+
+
+   .info-bg {
+     background-image: url("petimages/helena-lopes-S3TPJCOIRoo-unsplash.jpg");
+   }
+
 
 .moreinfo {
- background-color: hsla(17, 58%, 43%, 0.9);
+  background-image: url("petimages/helena-lopes-S3TPJCOIRoo-unsplash.png");
+  background-attachment: fixed;
   color: white;
   margin:auto;
   padding:5em;
-  padding-left: 14em;
-  padding-right:14em;
+  
 
 }
 .moreinfo h3 {
@@ -173,7 +320,7 @@ margin:auto;
 
 .moreinfo p {
   padding: 2em;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 h1 {
   font-size: 2em;
@@ -182,9 +329,14 @@ h1 {
 }
 
 /* about page */
+.about-heading{
+  padding:2em;
+  font-family: 'Lobster';
+}
 .faq-title {
   text-align: center;
   font-size: 2em;
+  color:#223d44
 }
 
 .faqs {
@@ -192,11 +344,24 @@ h1 {
   padding-right:10em;
   padding-top: 3em;
   padding-bottom: 3em;
+  color:#223d44;
 }
  
   
 
 /*caring for your pet page*/
+
+.caring-header {
+  font-family: 'Lobster';
+  font-size: 2em;
+  color:#223d44;
+  padding:1em;
+}
+.ntimportance {
+  padding:2em;
+  padding-left: 8em;
+  padding-right: 8em;
+}
 .video {
   padding-left: 15em;
   padding-right:10em;
@@ -223,7 +388,8 @@ footer
   font-size: 20px;
   position: relative;
   z-index: -1;
-  padding: 1em;
+  padding: 3em;
+  
   align-content: center;
   
 }
@@ -233,7 +399,14 @@ footer
   top: 0;
   right:0;
   padding: 1em;
-  
+  padding-right: 3em;
+  padding-top: 4em;
  
 
 }
+
+@media only screen and (min-width: 600px) {.introhome {
+ 
+
+  
+  }
