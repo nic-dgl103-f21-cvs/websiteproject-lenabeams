@@ -1,73 +1,66 @@
 .logoname {
-  font-family: 'Lobster';
+  font-family: "Lobster";
   color: #ad522e;
-  float: right; 
+  float: right;
   font-size: 5.4em;
   padding-right: 1em;
-  
 }
 
 .logopic {
   width: 8em;
-  padding-left:10em;
+  padding-left: 10em;
   padding-top: 1em;
 }
 
-
 body {
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .call-btn {
   background-color: #ad522e;
-  color:white;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
-  padding:1em;
+  padding: 1em;
   position: fixed;
   right: 0em;
-  top:10em;
+  top: 10em;
   writing-mode: vertical-rl;
   border-radius: 0.5em 0 0 0.5em;
 }
 li {
   display: inline;
-
 }
 nav a {
   text-decoration: none;
   color: white;
   text-align: center;
-  
 }
 
 nav a:hover {
-  color:#a9cdd6;
+  color: #a9cdd6;
 }
-/*home page css*/ 
+/*home page css*/
 
-
-  
 .introhome {
   margin: auto;
   text-align: center;
   padding-top: 20px;
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-size: 3em;
   padding-bottom: 1.5em;
 }
 
 .homepic {
   background-image: url(petimages/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
-background-attachment: fixed;
-padding-top:8em;
-padding-bottom: 8em;
-background-repeat: no-repeat;
-
+  background-attachment: fixed;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-repeat: no-repeat;
 }
 .homepic h2 {
- color:white;
- padding:3em;
- font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 3em;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu {
@@ -77,9 +70,6 @@ background-repeat: no-repeat;
   font-size: 2em;
   font-weight: bold;
   padding: 0.13em;
- 
-  
-
 }
 .alignment {
   text-align: center;
@@ -97,64 +87,102 @@ background-repeat: no-repeat;
   margin: 4px 2px;
   cursor: pointer;
   font-size: 2em;
+  
 }
+
 .words-heading {
-  font-weight:bold;
-  padding-top:3em;
-  font-size: 2em;;
+  font-weight: bold;
+  padding-top: 3em;
+  font-size: 2em;
+}
+.testimonials-wrapper1 p, .testimonials-wrapper2 p {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
 }
 .testemonials {
   padding-left: 4em;
   padding-right: 4em;
   font-size: 1.5em;
 }
- 
 
+@media only screen and (min-width: 1000px) {
+  .testimonials-wrapper1, .testimonials-wrapper2 {
+    display: flex;
+  }
+  .testimonials-wrapper1 p, .testimonials-wrapper2 p {
+    border: 1px solid black;
+    margin: 20px;
+    flex: 1 1 0;
+    padding: 20px;
+  }
 
-
+}
 
 /*services page*/
 .services-header {
-   padding:1em;
-  font-family: 'Lobster';
+  padding: 1em;
+  font-family: "Lobster";
   font-size: 2em;
-
 }
 main {
   padding-top: 2em;
   background-color: #a9cdd6;
-
+  margin: auto;
 }
 .card {
   width: 300px;
-  border: solid 2px; 
+  border: solid 3px;
   padding: 3px;
-  justify-content: space-between;
   margin: 10px;
   background-color: hsla(17, 58%, 43%, 0.9);
+  flex-grow: 1;
+  padding-top: 30px;
 }
 .card-dog-item1 {
   justify-content: space-between;
- 
 }
-
 
 .serviceimg {
   width: 300px;
-  
-  
-
 }
 .h3text {
   font-style: bold;
   font-size: 2em;
 }
- .medtext {
+.medtext {
   padding-top: 2em;
 }
 
+.flex-items {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: 13em;
+  padding-left: 13em;
+ 
+}
 
+.label {
+  font-weight: bold;
+  font-size: 1em;
+}
 
+.flex-pricing {
+  display: flex;
+  margin-top: 8em;
+  padding-left: 12em;
+  padding-right: 8em;
+}
+.flex-pricing dd {
+  text-align: center;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  margin: auto;
+}
 
 /* ===============
    FORM CSS
@@ -194,19 +222,17 @@ input[type="submit"]:hover {
 
 .wrapper-form {
   border-radius: 5px;
-  background-color:  #d2b48c;
+  background-color: #d2b48c;
   padding: 20px;
-  padding-right: 3em;;
+  padding-right: 3em;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 2em;
-  
 }
 
 .wrapper-button {
   display: flex;
   justify-content: space-between;
-  
 }
 
 /* ===============
@@ -218,7 +244,6 @@ select,
 textarea {
   font-size: 1em;
 }
-
 
 input[type="text"],
 select,
@@ -244,7 +269,6 @@ input[type="email"] {
 
 textarea {
   font-family: sans-serif;
-  
 }
 
 fieldset {
@@ -258,60 +282,16 @@ fieldset {
 }
 
 
-
-.flex-items {
-   margin:0;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-right: 10em;
-  padding-left: 13em;
-  align-items: stretch;
-  
-  
-  
+.info-bg {
+  background-image: url("petimages/helena-lopes-S3TPJCOIRoo-unsplash.jpg");
 }
-
-.label {
-  font-weight: bold;
-  font-size: 1em;
-}
-
-.flex-pricing {
-  display: flex;
-  margin-top:8em;
-  padding-left: 12em;
-  padding-right:8em;
-
-}
-.flex-pricing dd {
-  text-align: center;
-  margin: 0;
-}
-
-
-.flex-container{
-  display: flex;
-  margin: auto;
- 
-  
-
-}
-
-
-   .info-bg {
-     background-image: url("petimages/helena-lopes-S3TPJCOIRoo-unsplash.jpg");
-   }
-
 
 .moreinfo {
   background-image: url("petimages/helena-lopes-S3TPJCOIRoo-unsplash.png");
   background-attachment: fixed;
   color: white;
-  margin:auto;
-  padding:5em;
-  
-
+  margin: auto;
+  padding: 5em;
 }
 .moreinfo h3 {
   text-align: center;
@@ -325,88 +305,88 @@ fieldset {
 h1 {
   font-size: 2em;
   text-align: center;
-  color:#223d44;
+  color: #223d44;
 }
 
 /* about page */
-.about-heading{
-  padding:2em;
-  font-family: 'Lobster';
+.about-heading {
+  padding: 2em;
+  font-family: "Lobster";
 }
 .faq-title {
   text-align: center;
   font-size: 2em;
-  color:#223d44
+  color: #223d44;
 }
 
 .faqs {
   padding-left: 10em;
-  padding-right:10em;
+  padding-right: 10em;
   padding-top: 3em;
   padding-bottom: 3em;
-  color:#223d44;
+  color: #223d44;
 }
- 
-  
 
 /*caring for your pet page*/
 
 .caring-header {
-  font-family: 'Lobster';
+  font-family: "Lobster";
   font-size: 2em;
-  color:#223d44;
-  padding:1em;
+  color: #223d44;
+  padding: 1em;
 }
 .ntimportance {
-  padding:2em;
+  padding: 2em;
   padding-left: 8em;
   padding-right: 8em;
 }
 .video {
   padding-left: 15em;
-  padding-right:10em;
+  padding-right: 10em;
 }
 .helpful-articles {
   text-align: center;
   font-size: 1.5em;
 }
 
-
 .article-links {
-  color:#335d67;
-  padding-left:10em;
-  padding-right:10em;
+  color: #335d67;
+  padding-left: 10em;
+  padding-right: 10em;
   text-align: center;
   font-size: 1.2em;
   padding-bottom: 3em;
 }
 
-footer 
-{ color: aliceblue;
+footer {
+  color: aliceblue;
   background-color: #335d67;
   padding: 0.125em;
   font-size: 20px;
-  position: relative;
-  z-index: -1;
   padding: 3em;
-  
-  align-content: center;
-  
 }
 .map {
-  float:right;
-  position: absolute;
-  top: 0;
-  right:0;
-  padding: 1em;
-  padding-right: 3em;
-  padding-top: 4em;
- 
-
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
 }
 
-@media only screen and (min-width: 600px) {.introhome {
- 
-
-  
+@media only screen and (min-width: 735px) {
+  .map {
+    height: 300px;
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    display: flex;
+  }
+  .wrapper {
+    flex: 3 0 0;
+  }
+  .map {
+    flex: 2 0 0;
+    margin-left: 30px;
+  }
+}
