@@ -71,6 +71,9 @@ nav a:hover {
   font-weight: bold;
   padding: 0.13em;
 }
+ul .navspace {
+  padding-left: 20px;
+}
 .alignment {
   text-align: center;
 }
@@ -94,6 +97,9 @@ nav a:hover {
   font-weight: bold;
   padding-top: 3em;
   font-size: 2em;
+  font-family: "Lobster";
+  color: #335d67;
+  font-size: 2.5rem;
 }
 .testimonials-wrapper1 p, .testimonials-wrapper2 p {
   border-bottom: 1px solid black;
@@ -103,6 +109,8 @@ nav a:hover {
   padding-left: 4em;
   padding-right: 4em;
   font-size: 1.5em;
+  background-color: #ad522e;
+  color: white;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -166,13 +174,23 @@ main {
 .label {
   font-weight: bold;
   font-size: 1em;
+  text-decoration: none;
 }
+.pricing-contact {
+  text-align: center;
+  color: #223d44;
+  font-size: 3em;
+  font-family:"Lobster";
+  margin-bottom: 2em;
+  margin-top: 2em;}
+  
 
 .flex-pricing {
   display: flex;
   margin-top: 8em;
-  padding-left: 12em;
+  padding-left: 8em;
   padding-right: 8em;
+  font-size: 1.25em;
 }
 .flex-pricing dd {
   text-align: center;
@@ -182,6 +200,7 @@ main {
 .flex-container {
   display: flex;
   margin: auto;
+  padding: 2em;
 }
 
 /* ===============
