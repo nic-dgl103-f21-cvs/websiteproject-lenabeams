@@ -226,6 +226,14 @@ button:hover {
   background-color: #ad522e;
   color: white;
 }
+/* screen sizes 600px and below) */
+@media only screen and (max-width: 600px) {
+.testemonials {
+      padding:0;
+      font-size:0.75em;
+    
+}
+}
 
 @media only screen and (min-width: 1000px) {
   .testimonials-wrapper1, .testimonials-wrapper2 {
