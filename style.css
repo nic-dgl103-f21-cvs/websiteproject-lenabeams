@@ -1,39 +1,83 @@
+header {
+  margin:0;
+  padding:0;
+}
+
 .logoname {
   font-family: "Lobster";
   color: #ad522e;
   float: right;
   font-size: 5.4em;
   padding-right: 1em;
+  margin: 0;
+}
+/* screen sizes 600px and below) */
+@media only screen and (max-width: 840px) {
+  .logoname {
+    font-size: 10vw;
+    text-align: center;
+    padding-right: 0;
+   
+  }
+  
 }
 
 .logopic {
   width: 8em;
-  padding-left: 10em;
-  padding-top: 1em;
+  
+}
+/* screen sizes 780px and below) */
+@media only screen and (max-width: 780px) {
+  .logopic {
+    display:none
+   
+  }
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin:0;
+}
+.logo-item.left {
+  text-align: left;
+ padding-top: 2em;
+  padding-left:2em;
+  width: 50%;
+}
+.logo-item.right {
+  text-align: right;
+  width:500%;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
-.call-btn {
-  background-color: #ad522e;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1em;
-  position: fixed;
-  right: 0em;
-  top: 10em;
-  writing-mode: vertical-rl;
-  border-radius: 0.5em 0 0 0.5em;
-}
+
 li {
   display: inline;
 }
+/* screen sizes 400px and below) */
+@media only screen and (max-width: 400px) {
+li.navspace {
+      display: block;
+      text-align: left;
+    
+}
+}
+/* screen sizes 400px and below) */
+@media only screen and (max-width: 400px) {
+nav ul{
+    
+      text-align: left;
+      padding:0;
+    
+}
+}
+
 nav a {
   text-decoration: none;
   color: white;
-  text-align: center;
+
 }
 
 nav a:hover {
@@ -49,6 +93,13 @@ nav a:hover {
   font-size: 3em;
   padding-bottom: 1.5em;
 }
+/* screen sizes 600px and below) */
+@media only screen and (max-width: 600px) {
+.introhome {
+  font-size: 1.5em;
+      
+}
+}
 
 .homepic {
   background-image: url(petimages/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
@@ -56,6 +107,15 @@ nav a:hover {
   padding-top: 8em;
   padding-bottom: 8em;
   background-repeat: no-repeat;
+}
+/* screen sizes 600px and below) ***NEED TO FIGURE OUT HOW TO MAKE IMAGE FIT PROPERLY */
+@media only screen and (max-width: 600px) {
+.homepic {
+  
+
+      
+    
+}
 }
 .homepic h2 {
   color: white;
@@ -70,6 +130,14 @@ nav a:hover {
   font-size: 2em;
   font-weight: bold;
   padding: 0.13em;
+  text-align: left;
+}
+/* screen sizes 600px and below) */
+@media only screen and (max-width: 800px) {
+  .menu {
+    font-size: 0.75em;
+   
+  }
 }
 ul .navspace {
   padding-left: 20px;
@@ -90,12 +158,58 @@ ul .navspace {
   margin: 4px 2px;
   cursor: pointer;
   font-size: 2em;
+  transition: all 2s ease-in-out; 
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s; 
+
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+/* screen sizes 600px and below) */
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 20px 40px;
+    font-size: 1em;
+  }
+  
+}
+/* screen sizes 1000px and below) */
+@media only screen and (max-width: 1000px) {
+  .button {
+    padding: 20px 80px;
+    font-size: 1.5em;
+  }
   
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .flex-container {
+    display: flex;
+  }
+}
+
+  .flex-item {
+    flex-grow: 1;
+  }
+
+
+
+button:hover {
+  background-color:#ad522e;
+  color: white; 
+  animation-name: example;
+  animation-duration: 4s;
+}
+  
+
 .words-heading {
   font-weight: bold;
-  padding-top: 3em;
+  padding-top: 2em;
   font-size: 2em;
   font-family: "Lobster";
   color: #335d67;
@@ -118,7 +232,7 @@ ul .navspace {
     display: flex;
   }
   .testimonials-wrapper1 p, .testimonials-wrapper2 p {
-    border: 1px solid black;
+    border: 12px double #335d67;
     margin: 20px;
     flex: 1 1 0;
     padding: 20px;
@@ -130,7 +244,19 @@ ul .navspace {
 .services-header {
   padding: 1em;
   font-family: "Lobster";
-  font-size: 2em;
+  font-size: 3em;
+}
+.call-btn {
+  background-color: #ad522e;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+  position: fixed;
+  right: 0em;
+  top: 10em;
+  writing-mode: vertical-rl;
+  border-radius: 0.5em 0 0 0.5em;
 }
 main {
   padding-top: 2em;
@@ -184,10 +310,16 @@ main {
   margin-bottom: 2em;
   margin-top: 2em;}
   
+  .list-spacing {
+    padding-bottom:1.5em;
+  }
+  .pricinglist {
+    font-size: 1.5em;
+  }
 
 .flex-pricing {
   display: flex;
-  margin-top: 8em;
+  margin-top: 2em;
   padding-left: 8em;
   padding-right: 8em;
   font-size: 1.25em;
@@ -329,28 +461,54 @@ h1 {
 
 /* about page */
 .about-heading {
-  padding: 2em;
+  padding: 1em;
+  font-size: 3em;
   font-family: "Lobster";
+}
+.me {
+  width: 400px;
+}
+.me-container {
+  display: flex;
+  background-color: #ad522e;
+  padding: 1em;
+}
+.me-pic {
+  display: flex;
+  padding-left: 5em;
+  padding-right: 1em;
+}
+.me-para {
+  padding: 2em;
+  padding-left: 2em;
+  padding-right: 5em;
+  font-size: 1.2em;
+  color: white;
 }
 .faq-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
+  padding-top:1em;
   color: #223d44;
+  font-family: "Lobster";
 }
 
 .faqs {
-  padding-left: 10em;
-  padding-right: 10em;
-  padding-top: 3em;
+  padding-left: 13em;
+  padding-right: 13em;
+  padding-top: 1.5em;
   padding-bottom: 3em;
-  color: #223d44;
+  color: black;
 }
+ .space {
+   padding-top: 3em;
+ }
 
 /*caring for your pet page*/
 
 .caring-header {
   font-family: "Lobster";
-  font-size: 2em;
+  font-size: 3em;
   color: #223d44;
   padding: 1em;
 }

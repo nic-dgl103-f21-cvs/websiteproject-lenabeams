@@ -23,9 +23,15 @@
 
 <body>
   <header>
-    <h1 class="logoname"> Helena's Pet Care</h1>
-    <a href="1home.html">
+    <div class="logo-container">
+     <div class="logo-item left">
+      <a href="1home.html">
       <img class="logopic" src="petimages/HB-pet-care-logo-website.jpg" alt="logo to home"> </a>
+      </div>
+    <div class="logo-item right">
+    <h1 class="logoname"> Helena's Pet Care</h1>
+      </div>
+     </div>
       <br>
       <br>
       <!--adding tag to logo to take to home page-->
@@ -57,8 +63,8 @@
     <br>
   
     <form  style="display: inline" action="2services.html" method="get">
-     <button class="button" id="bookform">Book Now</button> </form>
-   <!--cant get button to jump from home to services form -->
+     <button class="button" id="bookform"> <a href="/2services.html#services-form-button"> Book Now </a> </button> </form>
+   
 
 
 

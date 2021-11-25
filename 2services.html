@@ -16,9 +16,16 @@
 <body>
 <!--DGL103 DLU Helena Beamish Website Assignment -->
 <header>
-  <h1 class="logoname"> Helena's Pet Care</h1>
-  <a href="index.html">
- <img class="logopic" src="petimages/HB-pet-care-logo-website.jpg" alt="logo to home"> </a>
+  <header>
+    <div class="logo-container">
+     <div class="logo-item left">
+      <a href="1home.html">
+      <img class="logopic" src="petimages/HB-pet-care-logo-website.jpg" alt="logo to home"> </a>
+      </div>
+    <div class="logo-item right">
+    <h1 class="logoname"> Helena's Pet Care</h1>
+      </div>
+     </div>
   <br>
   <br>
   
@@ -98,17 +105,17 @@
     </div>
 
     <div class="card">
-       <img class="serviceimg" src="petimages/erin-agius-3QCjHVr0l5I-unsplash.jpg" alt="kitten cleaned up" >
+       <img class="serviceimg" src="petimages/erin-agius-3QCjHVr0l5I-unsplash.jpg" alt="kitten cleaned up">
       
       <h2 class="text">Help with Bathing and Clean up (if pet permits) </h2>
     </div>
    <div class="card">
-       <img class="serviceimg" src="petimages/pedro-sanz--OuY-r0YZ3w-unsplashresized.jpg" alt="sphynx cat" >
+       <img class="serviceimg" src="petimages/pedro-sanz--OuY-r0YZ3w-unsplashresized.jpg" alt="sphynx cat">
       
       <h2 class="text">Help with Brushing Fur or Teeth (if pet permits)</h2>
    </div>
    <div class="card">
-       <img class="serviceimg" src="petimages/felice-wolke-p-JX5Xk7Zoc-unsplashresized.jpg" alt="cat eating";> 
+       <img class="serviceimg" src="petimages/felice-wolke-p-JX5Xk7Zoc-unsplashresized.jpg" alt="cat eating"> 
       <h2 class="text">Cat Check-ins and Feedings while you’re away</h2>
    </div>
      
@@ -147,40 +154,42 @@
   <div class= "flex-pricing">
     
     <dl>
+      <dt> <strong class="pricinglist">Pricing List</strong></dt>
+      <dd class="list-spacing"> *may very on specific pet but will always be discussed*</dd>
   
-      <dt> <strong>Minimal Stress Nail Trims </strong> 
+      <dt> <strong>Minimal Stress Nail Trims </strong> </dt>
         <dd>$25.00 per pet </dd>
-        <dd> add on nail trim to additional service <br>- $15.00</dd> 
-      </dt>
-      <br>
-       <dt><strong> Medication Administration / Ear Cleaning </strong> 
-        <dd> $10.00 or <br> $5.00 as add on</dd>
-      </dt>
-      <br>
-      <dt><strong> Bathing and Clean up </strong> 
+        <dd class="list-spacing"> add on nail trim to additional service <br>- $15.00</dd> 
+      
+      
+       <dt><strong> Medication Administration / Ear Cleaning </strong> </dt>
+        <dd class="list-spacing"> $10.00 or <br> $5.00 as add on</dd>
+      
+      
+      <dt><strong> Bathing and Clean up </strong> </dt>
         <dd>$30.00 small pet</dd>
-        <dd>$40.00 large pet</dd>
-      </dt>
-      <br>
-      <dt> <strong> Brushing Fur/Teeth </strong> 
-         <dd>$15.00 or $10.00 add on</dd>
-      </dt>
-      <br>
-      <dt> <strong> Check-in's or Feedings</strong> 
-         <dd>$25.00 each time</dd>
-      </dt>
+        <dd class="list-spacing">$40.00 large pet</dd>
+      
+      
+      <dt> <strong> Brushing Fur/Teeth </strong> </dt>
+         <dd class="list-spacing">$15.00 or $10.00 add on</dd>
+      
+      
+      <dt> <strong> Check-in's or Feedings</strong> </dt>
+         <dd class="list-spacing">$25.00 each time</dd>
+      
 
-    </ul> 
+    </dl> 
     </div>
   
-  <div class="wrapper-form">
+  <div id="services-form-button" class="wrapper-form">
   <h2 >Contact Form</h2>
-  <form #bookform method="post" action="mailto:Helena.Beamish@gmail.com">
+  <form method="post" action="mailto:Helena.Beamish@gmail.com">
     <label class="label" for="fname">First Name</label>
     <input class="form-box" type="text" id="fname" name="firstname" placeholder="Ex: Mike">
 
     <label class="label" for="lname">Last Name</label>
-    <input class="form-box"type="text" id="lname" name="lastname" placeholder="Ex: Smith">
+    <input class="form-box" type="text" id="lname" name="lastname" placeholder="Ex: Smith">
 
     <label class="label" for="email">Email <span class="label-required">* (required)</span></label>
     <input class="form-box" type="email" id="email" name="email" placeholder="Ex: mike@yahoo.com" required>
@@ -199,9 +208,9 @@
     <fieldset>
       <legend class="label" >Choose Pet Type:</legend>
       <input type="radio" id="ldog" name="type" value="large Dog">
-      <label class="label"for="ldog">Large Dog</label><br>
+      <label class="label" for="ldog">Large Dog</label><br>
       <input type="radio" id="sdog" name="type" value="Small Dog">
-      <label class="label"for="sdog">Small Dog</label><br>
+      <label class="label" for="sdog">Small Dog</label><br>
       <input type="radio" id="cat" name="type" value="Cat">
       <label class="label" for="cat"> Cat </label>
     </fieldset>
@@ -216,9 +225,6 @@
   </form>
 </div>
 </div>
-
-</a>
-
 
   </main>
 <footer>
