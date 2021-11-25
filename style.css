@@ -105,6 +105,7 @@ nav a:hover {
 .homepic {
   background-image: url(petimages/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
   background-attachment: fixed;
+  background-size: cover;
   padding-top: 8em;
   padding-bottom: 8em;
   background-repeat: no-repeat;
