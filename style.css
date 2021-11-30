@@ -309,12 +309,10 @@ button:hover {
   
 }
 
-.fb-like {
-}
-  /* screen sizes
+   /*screen sizes
   600px and below) */ /* Dale please help shrink size of the fb button in css using media queries for mobile****** */
 @media only screen and (max-width: 600px) {
-  .menu {
+  .fb-like {
     font-size: 0.10em;
    height: 5px;
    width:10px;
