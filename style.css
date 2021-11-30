@@ -309,6 +309,18 @@ button:hover {
   
 }
 
+.fb-like {
+}
+  /* screen sizes
+  600px and below) */ /* Dale please help shrink size of the fb button in css using media queries for mobile****** */
+@media only screen and (max-width: 600px) {
+  .menu {
+    font-size: 0.10em;
+   height: 5px;
+   width:10px;
+  }
+}
+
 /*services page*/
 .services-header {
   padding: 1em;
@@ -621,8 +633,7 @@ h4.helpful-articles {
   padding-bottom: 3em;
 }
 .help-links {
-  padding-left:12em;
-  padding-right:12em;
+  display:block;
 }
 
 footer {
